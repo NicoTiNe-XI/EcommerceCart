@@ -1,0 +1,140 @@
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  z-index: 3;
+  overflow-y: auto;
+}
+
+.cart-sidebar.open {
+  transform: translateX(0);
+}
+
+.cart-sidebar .close-btn {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  font-size: 24px;
+  background-color: #9a3715;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  letter-spacing: 4px;
+}
+
+.cart-header h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.cart-header .clear-btn {
+  font-size: 24px;
+  border: 1px solid black;
+  padding: 5px 15px;
+  background: none;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.cart-item .product-data {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-item .product-data h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cart-item .product-data p {
+  margin: 5px 0;
+  color: gray;
+  font-weight: 700;
+}
+
+.cart-item .increment-controls {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 20px;
+  justify-content: right;
+}
+
+.cart-item .increment-controls button {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid black;
+  font-weight: 800;
+}
+
+.cart-sidebar .cart-footer {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.cart-sidebar .cart-footer .checkout-btn {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .cart-sidebar {
+    width: 100%;
+    margin-top: 63px;
+  }
+}

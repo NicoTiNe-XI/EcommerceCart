@@ -1,0 +1,50 @@
+header {
+  max-height: 63px;
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container .logo {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+header .container .header-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+header .container .header-cart button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+
+header .container .cart-image img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+header .container .cart-increment {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-weight: bold;
+  padding: 2px 6px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
