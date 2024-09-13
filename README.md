@@ -1,42 +1,37 @@
 # E-commerce Cart
 
-This project is a simple e-commerce cart built using React, Redux Toolkit, and Axios.
+This Project is a simple e-commerce cart built using React, Redux Toolkit, and Axios.
 It allows users to add products to a cart, update quantities by increment and decrement, and view the total price.
 
-Clone the project
+1. Clone the Project repository: Use Git to clone the Project repository to your local machine.
 
 ```bash
   git clone https://github.com/NicoTiNe-XI/EcommerceCart
 ```
 
-Go to the project directory
+2. Navigate to the Project Directory Change your current directory to the project folder.
 
 ```bash
   cd .\EcommerceCart
 ```
 
-Install dependencies
+4. Install Project dependencies
 
 ```bash
-  npm create vite@latest
   npm install
+```
+5. Install Packages
+```bash
+  npm create vite@latest
   npm install @reduxjs/toolkit
   npm i axios
-```
+  ```
 
-Start the server
+6. Start the deployment server
 
 ```bash
   npm run start
 ```
-
-## Project Structure:
-
-- src/: Contains the source code for the project.
-- components/: Stores reusable React components.
-- features/: Houses the application's logic and state management.
-- App.js: The main application component.
-- index.css: Global styles for the application.
 
 ## Tech Stack:
 
