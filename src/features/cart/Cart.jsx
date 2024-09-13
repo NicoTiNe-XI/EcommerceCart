@@ -39,7 +39,7 @@ export default function Cart({ onClose, isCartOpen }) {
                 <img src={item.image} alt={item.title} />
                 <div className="product-data">
                   <h3>{item.title}</h3>
-                  <p>{item.price} EGP</p>
+                  <p>{item.price * item.quantity} EGP</p>
                 </div>
               </div>
               <div className="increment-controls">
