@@ -18,8 +18,9 @@ Go to the project directory
 Install dependencies
 
 ```bash
-npm create vite@latest
+  npm create vite@latest
   npm install
+  npm install @reduxjs/toolkit
   npm i axios
 ```
 
