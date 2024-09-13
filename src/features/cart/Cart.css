@@ -11,6 +11,7 @@
   transition: transform 0.3s ease-in-out;
   transform: translateX(100%);
   z-index: 3;
+  overflow-y: auto;
 }
 
 .cart-sidebar.open {
