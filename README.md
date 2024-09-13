@@ -1,6 +1,7 @@
 # E-commerce Cart
 
 This Project is a simple e-commerce cart built using React, Redux Toolkit.
+
 It allows users to add products to a cart, update quantities by increment and decrement, and view the total price.
 
 1. Clone the Project repository: Use Git to clone the Project repository to your local machine.
