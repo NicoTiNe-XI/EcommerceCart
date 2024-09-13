@@ -20,12 +20,6 @@ It allows users to add products to a cart, update quantities by increment and de
 ```bash
   npm install
 ```
-5. Install Packages
-```bash
-  npm create vite@latest
-  npm install @reduxjs/toolkit
-  npm i axios
-  ```
 
 6. Start the deployment server
 

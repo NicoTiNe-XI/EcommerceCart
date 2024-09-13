@@ -9,6 +9,7 @@ section.products .container {
 section.products .container h2 {
   margin: 20px 0;
   font-size: 28px;
+  text-align: left;
 }
 
 section.products .container .product-list {

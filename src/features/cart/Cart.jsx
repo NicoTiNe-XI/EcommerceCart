@@ -43,14 +43,6 @@ export default function Cart({ onClose, isCartOpen }) {
                 </div>
               </div>
               <div className="increment-controls">
-                {/* Increase the item quantity by dispatching the incrementQuantity action */}
-                <button
-                  onClick={() =>
-                    dispatch(incrementQuantity({ productId: item.id }))
-                  }>
-                  +
-                </button>
-                <span>{item.quantity}</span>
                 {/* Decrease the item quantity by dispatching the decrementQuantity action */}
                 <button
                   onClick={() =>
@@ -58,6 +50,14 @@ export default function Cart({ onClose, isCartOpen }) {
                   }
                   disabled={item.quantity === 1}>
                   -
+                </button>
+                <span>{item.quantity}</span>
+                {/* Increase the item quantity by dispatching the incrementQuantity action */}
+                <button
+                  onClick={() =>
+                    dispatch(incrementQuantity({ productId: item.id }))
+                  }>
+                  +
                 </button>
                 {/* Remove the item from the cart by dispatching the removeFromCart action */}
                 <button
