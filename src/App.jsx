@@ -1,40 +1,26 @@
 import "./index.css";
-import axios from "axios";
 import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
 import Cart from "./features/cart/Cart";
-import { useState, useEffect } from "react";
-
-async function fetchProducts() {
-  const PRODUCTS_API = "https://fakestoreapi.com/products";
-  const response = await axios.get(PRODUCTS_API);
-  return response.data;
-}
+import { useState } from "react";
 
 function App() {
-  const [products, setProducts] = useState([]);
-  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false); // State to manage the visibility of the cart
 
+  // Function to toggle the cart's visibility
   const toggleCart = () => {
-    setIsCartOpen(!isCartOpen);
+    setIsCartOpen((prevState) => !prevState); // Inverts the current state to show/hide the cart
   };
 
+  // Function to open the cart when an item is added
   const onAddItem = () => {
-    setIsCartOpen(true);
+    setIsCartOpen(true); // Sets the cart visibility to true, ensuring the cart opens and displays the newly added item
   };
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const fetchedProducts = await fetchProducts();
-      setProducts(fetchedProducts);
-    };
-    fetchData();
-  }, []);
 
   return (
     <>
-      <Header toggleCart={toggleCart} isCartOpen={isCartOpen} />
-      <Products products={products} onAddItem={onAddItem} />
+      <Header toggleCart={toggleCart} />
+      <Products onAddItem={onAddItem} />
       <Cart onClose={toggleCart} isCartOpen={isCartOpen} />
     </>
   );
